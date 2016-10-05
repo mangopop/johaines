@@ -1,0 +1,1 @@
+firebase cms setup using textAngular and using browserify properly so testing works
