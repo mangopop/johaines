@@ -10,18 +10,6 @@
 
 import angular from 'angular';
 
-/*
-<script src="bower_components/jquery/dist/jquery.js"></script>
-  <script src="bower_components/jquery-bridget/jquery-bridget.js"></script>
-  <script src="bower_components/ev-emitter/ev-emitter.js"></script>
-  <script src="bower_components/desandro-matches-selector/matches-selector.js"></script>
-  <script src="bower_components/fizzy-ui-utils/utils.js"></script>
-  <script src="bower_components/get-size/get-size.js"></script>
-  <script src="bower_components/outlayer/item.js"></script>
-  <script src="bower_components/outlayer/outlayer.js"></script>
-  <script src="bower_components/masonry/masonry.js"></script>
-  <script src="bower_components/imagesloaded/imagesloaded.js"></script>
- */
 
 // angular modules
 import constants from './constants';
