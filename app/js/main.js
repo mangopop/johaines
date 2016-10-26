@@ -1,22 +1,12 @@
-// import 'jquery';
-// import 'jquery-bridget';
-// import 'ev-emitter';
-// import 'desandro-matches-selector';
-// import 'fizzy-ui-utils';
-// import 'get-size';
-// import 'outlayer';
-// import 'masonry-layout';
-// import 'imagesloaded';
 
 import angular from 'angular';
-
 
 // angular modules
 import constants from './constants';
 import onConfig  from './on_config';
 import onRun     from './on_run';
 import 'angular-ui-router';
-import 'angular-masonry';
+// import 'angular-masonry';
 //move this to service?
 import 'textangular/dist/textAngular-sanitize.min';
 // import 'textangular/dist/textAngular-rangy.min';
@@ -32,7 +22,6 @@ import './components';
 
 // create and bootstrap application
 const requires = [
-  'wu.masonry',
   'textAngular',
   'firebase',
   'ui.router',

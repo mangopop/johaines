@@ -1,36 +1,21 @@
-function MasonryDemoCtrl(){
+function MasonryDemoCtrl() {
 
-var Masonry = require('masonry-layout');
-var imagesLoaded = require('imagesloaded');
-var AnimOnScroll = require('AnimOnScroll');
+  var Masonry = require('masonry-layout');
+  var imagesLoaded = require('imagesloaded');
 
-// var msnry = new Masonry( '.grid', {
-//   itemSelector: '.grid-item',
-//   columnWidth: 200
-// });
+  // init Isotope
+  var grid = document.querySelector('.grid');
 
-// external js: masonry.pkgd.js, imagesloaded.pkgd.js
+  var msnry = new Masonry(grid, {
+    itemSelector: '.grid-item',
+    columnWidth: '.grid-sizer',
+    percentPosition: true
+  });
 
-// init Isotope
-// var grid = document.querySelector('.grid');
-
-// var msnry = new Masonry( grid, {
-//   itemSelector: '.grid-item',
-//   columnWidth: '.grid-sizer',
-//   percentPosition: true
-// });
-
-// imagesLoaded( grid ).on( 'progress', function() {
-//   // layout Masonry after each image loads
-//   msnry.layout();
-// });
-
-new AnimOnScroll( document.getElementById( 'grid' ), {
-		minDuration : 0.4,
-		maxDuration : 0.7,
-		viewportFactor : 0.2
-	} );
-
+  imagesLoaded(grid).on('progress', function () {
+    // layout Masonry after each image loads
+    msnry.layout();
+  });
 
 }
 
