@@ -50,13 +50,13 @@ h1,h2,h3,h4{
     padding: 1em;
 }
 
-@media #{$small-only} {
+@media screen and (max-width: 40em){
     .grid-sizer, .grid-item {
         width: 100%;
     }
 }
 
-@media #{$medium-up} { 
+@media screen and (min-width: 40.6em){
     .grid-sizer, .grid-item {
         width: 33.333%;
     }
