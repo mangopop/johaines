@@ -24,15 +24,45 @@ function HomeCtrl() {
     'necklace8'
   ];
 
-  //specific to device
-// var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
-// console.log(screen.width);
-//   if (screen.width < 600) {
-//     console.log('small');
-//     var d = document.getElementById('siteHome');
-//     d.className += ' mobile';
+  // lightbox ------------ //
 
-//   }
+  var id;
+
+  function toggle() {
+    console.log('CLICKED TOGGLE');
+    $('.full-lightbox').toggleClass('hidden');
+    $('#full-' + id).toggleClass('hidden');
+  }
+
+  //close element on X
+  $('.close').click(function () {
+    console.log('CLICKED CLOSE');
+    toggle();
+  });
+
+  //close element on click off-image
+  // $('.full').click(function(){
+  //   toggle();
+  // });
+
+  //open full image using captured id
+  $('.image').click(function (event) {
+    console.log('CLICKED IMAGE'+event.target.id);
+    id = event.target.id;
+    toggle();
+  });
+
+  //specific to device
+  // var width = (window.innerWidth > 0) ? window.innerWidth : screen.width;
+  // console.log(screen.width);
+  //   if (screen.width < 600) {
+  //     console.log('small');
+  //     var d = document.getElementById('siteHome');
+  //     d.className += ' mobile';
+
+  //   }
+
+  // --------------- end-lightbox //
 
   // init Isotope
   let grid = document.querySelector('.grid');
@@ -40,7 +70,7 @@ function HomeCtrl() {
   let msnry = new Masonry(grid, {
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
-    gutter:10,
+    gutter: 10,
     percentPosition: true
   });
 
