@@ -11,19 +11,14 @@ $grey:#434343;
 $jet-black:#121212;
 $cream:rgb(217,217, 217);
 
-html,body{
-//   width:100%;
-//   height:100%;
-}
-/* force scrollbar */
-html { overflow-y: scroll; }
 body{
     font-family: 'Cinzel Decorative', cursive;
     background-color: $grey;
     color: rgb(217,217, 217);
 }
 
-
+/* force scrollbar */
+html { overflow-y: scroll; }
 
 h1{
     font-size: 5em;
@@ -91,51 +86,6 @@ footer{
   -webkit-scroll-snap-destination: 100% 0%;
       -ms-scroll-snap-destination: 100% 0%;
           scroll-snap-destination: 100% 0%;
-}
-
-// lightbox //
-
-
-
-#siteHome{
-  background-color:grey;
-  width:700px;
-  height:200px;
-  margin:0 auto;
-}
-
-.close{
-  cursor:pointer;
-}
-
-.full{
-  position:absolute;
-  background:rgba(5,5,5,.8);
-  width:100%;
-  height:100%;
-}
-
-.img-container{
-  position:absolute;
-  left: 50%;
-  top:50%;
-  transform: translateX(-50%)  translateY(-50%);
-  
-  a{
-    font-size:2em;
-    font-weight:bold;
-    color:grey;
-    position:absolute;
-    right: 10px;
-    text-decoration:none;
-  }
-  img{
-    border:5px solid white;
-  }
-}
-
-.hidden{
-  display:none;
 }
 
 
