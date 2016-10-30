@@ -30,6 +30,7 @@ function HomeCtrl() {
   let msnry = new Masonry(grid, {
     itemSelector: '.grid-item',
     columnWidth: '.grid-sizer',
+    // gutter:10,
     percentPosition: true
   });
 
