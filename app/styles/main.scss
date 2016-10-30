@@ -11,6 +11,11 @@ $grey:#434343;
 $jet-black:#121212;
 $cream:rgb(217,217, 217);
 
+html,body{
+    height:100%; 
+    width:100%;
+}
+
 body{
     font-family: 'Cinzel Decorative', cursive;
     background-color: $grey;
@@ -65,13 +70,60 @@ header{
     padding: 1em;
 }
 
+.angle-down{
+    position: absolute;
+    text-align: center;
+    left: 50%;
+}
+
 footer{
     background-color:$cream;
+}
+
+// lightbox //
+
+.close{
+  cursor:pointer;
+      font-size:2em;
+    font-weight:bold;
+    color:white;
+    position:absolute;
+    right: 10px;
+    top:5px;
+    text-decoration:none;
+}
+
+.full-lightbox{
+  z-index: 1;
+  position:absolute;
+//   background:rgba(5,5,5,.8);
+
+  width:100%;
+  height:100%;
+}
+
+.img-container{
+  position:fixed;
+  box-shadow: black 0 0 5px;
+  left: 50%;
+  top:50%;
+  transform: translateX(-50%)  translateY(-50%);
+  
+
+  img{
+    border:5px solid white;
+    outline: 1px solid black;
+  }
+}
+
+.hidden{
+  display:none;
 }
 
 // page snapping //
 
 .page {
+    position: relative;// so angle bracket sits at bottom
   width: 100vw;
   height: 100vh;
 }
@@ -127,6 +179,7 @@ footer{
 }
 
 .grid-item {
+cursor: pointer;
   float: left;
   margin-bottom: 10px;
 }

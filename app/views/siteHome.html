@@ -4,6 +4,10 @@
 			<h1>bSpK</h1>
 			<p>- Jewellery design -</p>
 		</div>
+		<div class="angle-down">
+			<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+		</div>
+
 	</header>
 
 	<section class="about full-width page">
@@ -15,23 +19,44 @@
 			such as acrylic and resin, and displayed work at various shows including ‘new designers’ in Islington. After graduating
 			with honours Jo worked in jewellery workshops in Bath and Bradford on Avon. Jo now works from a private workshop creating
 			handmade bSpK jewellery from engagement and wedding rings to dress and formalwear.</p>
+		<div class="angle-down"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
+
 	</section>
 
 	<div class="row">
 		<h2 class="h2_gallery">Gallery</h2>
 	</div>
 
+
+	<div class="full-lightbox hidden">
+		<div id="full-image1" class="img-container hidden">
+			<i class="fa fa-times fa-2x close" aria-hidden="true"></i>
+			<img src="images/ring1.jpeg" alt="" />
+		</div>
+
+		<div id="full-image2" class="img-container hidden">
+			<i class="fa fa-times fa-2x close" aria-hidden="true"></i>
+			<img src="images/ring2.jpeg" alt="" />
+		</div>
+
+		<div id="full-image3" class="img-container hidden">
+			<i class="fa fa-times fa-2x close" aria-hidden="true"></i>
+			<img src="images/ring3.jpeg" alt="" />
+		</div>
+	</div>
+
 	<section id="siteHome" class="row grid">
 
+
 		<div class="grid-sizer"></div>
-		
+
 		<!--not waiting for masonary-->
 		<!--<div ng-repeat="image in home.images" class="grid-item">
 		<img ng-src="images/{{image}}.jpeg" />        
 	</div>-->
 
 		<div class="grid-item">
-			<img src="images/ring1.jpeg" />
+			<img class="image" id="image1" src="images/ring1.jpeg" />
 		</div>
 		<div class="grid-item">
 			<img src="images/ring2.jpeg" />
