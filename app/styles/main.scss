@@ -57,18 +57,19 @@ h1,h2,h3,h4{
 
 @media screen and (min-width: 40.6em){
     .grid-sizer, .grid-item {
-        width: 32%;//
+        width: 33.333%;
+        //change for borders
     }
 }
 
 .grid-item {
   float: left;
-  margin-bottom: 10px;
+//   margin-bottom: 10px;
 }
 
 .grid-item img {
-    border: 1px solid white;
+    // border: 1px solid white;
   display: block;
   max-width: 100%;
-  margin: 0 auto;
+//   margin: 0 auto;
 }
