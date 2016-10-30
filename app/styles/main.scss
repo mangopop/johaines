@@ -47,9 +47,9 @@ h2,h3,h4{
     width: 100%;
 }
 
-.white-bg{
-    background: white;
-}
+// .white-bg{
+//     background: white;
+// }
 
 header{
     height:400px; //must match screen
@@ -64,13 +64,25 @@ header{
 
 
 .about{
+    text-align: center;
     background-color: $cream;
     color: $grey;
     margin: 1em 0;
     padding: 1em;
 }
 
+.about-text{
+    top:50%;
+    transform: translateY(-50%);
+}
+
+.contact{
+    color: $grey;
+    text-align: center;
+}
+
 .angle-down{
+    cursor: pointer;
     position: absolute;
     text-align: center;
     left: 50%;

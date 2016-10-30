@@ -4,27 +4,29 @@
 			<h1>bSpK</h1>
 			<p>- Jewellery design -</p>
 		</div>
-		<div class="angle-down">
-			<i class="fa fa-angle-down fa-2x" aria-hidden="true"></i>
+		<div class="angle-down" ng-click="home.scrollTo('about')">
+			<i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
 		</div>
 
 	</header>
 
-	<section class="about full-width page">
+	<section id="about" class="about full-width page">
 		<h2>About</h2>
-		<h3>/bɪˈspəʊk/</h3>
-		<p>bSpK jewellery design was created as a showcase for the work of goldsmith and Jewellery designer Jo Moorshead. Jo studied
-			art and design at Wiltshire college during which time she became interested in jewellery design. This led to a bachelor
-			of arts degree in jewellery at Middlesex university in London. During her university career Jo worked with modern materials
-			such as acrylic and resin, and displayed work at various shows including ‘new designers’ in Islington. After graduating
-			with honours Jo worked in jewellery workshops in Bath and Bradford on Avon. Jo now works from a private workshop creating
-			handmade bSpK jewellery from engagement and wedding rings to dress and formalwear.</p>
-		<div class="angle-down"><i class="fa fa-angle-down fa-2x" aria-hidden="true"></i></div>
-
+			<h3>/bɪˈspəʊk/</h3>
+			<p>bSpK jewellery design was created as a showcase for the work of goldsmith and Jewellery designer Jo Moorshead. Jo studied
+				art and design at Wiltshire college during which time she became interested in jewellery design. This led to a bachelor
+				of arts degree in jewellery at Middlesex university in London. During her university career Jo worked with modern materials
+				such as acrylic and resin, and displayed work at various shows including ‘new designers’ in Islington. After graduating
+				with honours Jo worked in jewellery workshops in Bath and Bradford on Avon. Jo now works from a private workshop creating
+				handmade bSpK jewellery from engagement and wedding rings to dress and formalwear.</p>
+		<div class="angle-down" ng-click="home.scrollTo('gallery')">
+			<i class="fa fa-angle-down fa-3x" aria-hidden="true"></i>
+		</div>
 	</section>
 
 	<div class="row">
-		<h2 class="h2_gallery">Gallery</h2>
+		<a name="gallery"></a>
+		<h2 id="gallery" class="h2_gallery">Gallery</h2>
 	</div>
 
 
@@ -107,10 +109,17 @@
 			<img src="images/necklace8.jpeg" />
 		</div>
 		<!--</div>-->
+
 	</section>
 
-	<footer class="page">
+	<div class="row">
+		<div class="angle-down" ng-click="home.scrollTo('contact')"><i class="fa fa-angle-down fa-3x" aria-hidden="true"></i></div>
+	</div>
+
+	<footer id="contact" class="page contact">
 		<h2>Contact</h2>
+		<p>JO MOORESHEAD</p>
 		<p><i class="fa fa-envelope-o" aria-hidden="true"></i> <a href="mailto:jo@bspk.design">jo@bspk.design</a></p>
+		<p>All images copyright Jo Moorshead 2016</p>
 	</footer>
 </div>

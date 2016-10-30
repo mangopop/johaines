@@ -24,6 +24,16 @@ function HomeCtrl() {
     'necklace8'
   ];
 
+  // scrollto ------------ //
+
+  home.scrollTo = (target) =>{
+    var el = $('#'+target);
+    console.log(el.offset().top);
+    $('html, body').animate({
+        scrollTop: el.offset().top
+    }, 500);
+  }
+
   // lightbox ------------ //
 
   var id;
