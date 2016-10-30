@@ -32,7 +32,6 @@
     "unit": "cross-env NODE_ENV=test ./node_modules/.bin/gulp unit"
   },
   "dependencies": {
-    "masonry.js": "^3.1.5",
     "angular-masonry": "^0.16.0",
     "angularfire": "^2.0.2",
     "bootstrap": "^3.3.7",
@@ -46,6 +45,7 @@
     "imagesloaded": "^4.1.1",
     "jquery": "^3.1.1",
     "jquery-bridget": "^2.0.1",
+    "masonry.js": "^3.1.5",
     "outlayer": "^2.1.0",
     "textangular": "^1.5.10"
   },
